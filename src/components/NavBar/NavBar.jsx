@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from './Link';
 
 const navLinks = [
   {
@@ -32,13 +33,23 @@ const navLinks = [
 const NavBar = () => {
     return (
         <nav>
-            {/* Ami amar moto kore dainamicali banate pari */}
+
+
             <ul className='flex'>
+                {
+                navLinks.map(route => <Link key={route.id} route={route}></Link>)
+                }
+            </ul>
+
+
+            {/* Ami amar moto kore dainamicali banate pari */}
+            {/* <ul className='flex'>
                 {
                    navLinks.map(route =><li className='mr-10'>
                     <a href={route.path}>{route.name}</a></li> )
                 }
-            </ul>
+            </ul> */}
+
             {/* Ami chaile A vabe o korte pari */}
             {/* <ul className='flex '>
                 <li className='mr-10'><a href="/">Home</a></li>

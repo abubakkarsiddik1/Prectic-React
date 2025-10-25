@@ -1,5 +1,6 @@
 import React, { use } from 'react';
 import PricingCard from '../PricingCard/PricingCard';
+import DaisyPrisingCard from '../DaisyPrisingCard/DaisyPrisingCard';
 
 const PricingOptions = ({pricingPromise}) => {
 
@@ -14,6 +15,12 @@ const PricingOptions = ({pricingPromise}) => {
                     pricingData.map(pricing => <PricingCard 
                         key={pricing.id}
                         pricing={pricing}></PricingCard>)
+                }
+
+                {
+                    pricingData.map(pricing => <DaisyPrisingCard 
+                     key={pricing.id}
+                    pricing = {pricing}></DaisyPrisingCard>)
                 }
             </div>
         </div>

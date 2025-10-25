@@ -17,6 +17,7 @@
     "id": 2,
     "name": "Standard Plan",
     "price": "$45/month",
+    "popular": true,
     "info": "Perfect for consistent gym-goers who want more flexibility and support.",
     "features": [
       "24/7 gym access",
